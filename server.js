@@ -1,5 +1,6 @@
 
 // DEPENDENCIES
+// const fs = require("fs");
 // EXPRESS CONFIGURATION
 var express = require("express");
 
@@ -17,7 +18,7 @@ app.use(express.static("db"));
 
 // ROUTER
 
-// require("./routes/apiRoutes")(app);
+require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
 // LISTENER

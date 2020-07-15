@@ -3,7 +3,7 @@ const path = require("path");
 const fs = require("fs");
 
 // var tableData = require("../data/tableData");
-var notesDBJSON = require("../data/notetakerData");
+// var notesDBJSON = require("../data/notetakerData");
 // var waitListData = require("../data/notetakerData");
 
 
@@ -21,5 +21,6 @@ module.exports = function(app) {
     });
 });
 
+// save notes to db.json
 
 }
