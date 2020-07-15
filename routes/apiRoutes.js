@@ -42,13 +42,13 @@
 //   fs.readFile(path.join(__dirname + "/db/db.json"),"utf8", function (err, data) {
 //           if (err) throw err;
 //           data = JSON.parse(data);
-//           const filteredNotes = [];
+//           const storedNotes = [];
 //           for (let i = 0; i < data.length; i++) {
 //               if (parseInt(req.params.id) !== data[i].id) {
-//                   filteredNotes.push(data[i])
+//                   storedNotes.push(data[i])
 //               };
 //           };
-//           fs.writeFile(path.join(__dirname + "/db/db.json"), JSON.stringify(filteredNotes, null, 2), "utf8", function (err) {
+//           fs.writeFile(path.join(__dirname + "/db/db.json"), JSON.stringify(storedNotes, null, 2), "utf8", function (err) {
 //               if (err) throw err;
 //               res.sendStatus(200)
 //           });
